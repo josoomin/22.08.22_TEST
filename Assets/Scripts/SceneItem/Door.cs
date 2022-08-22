@@ -13,7 +13,7 @@ namespace roomescape
         {
             base.Start();
 
-            _doorPanelTrans = transform.Find("DOOR");
+            _doorPanelTrans = transform.Find("Door");
         }
 
         protected override void OnMouseDown()
@@ -35,19 +35,19 @@ namespace roomescape
         {
             _opened = true;
 
-            _doorPanelTrans = transform.Find("DOOR");
+            _doorPanelTrans = transform.Find("Door");
 
             float y = _doorPanelTrans.localPosition.y;
 
-            _doorPanelTrans.localPosition = new Vector3(0.0938f, y, -0.2758f);
-            _doorPanelTrans.rotation = Quaternion.Euler(0, 80f, 0);
+            _doorPanelTrans.localPosition = new Vector3(-0.2476f, y, -0.0187f);
+            _doorPanelTrans.rotation = Quaternion.Euler(0, -66.905f, 0);
         }
 
         public void Close()
         {
             _opened = false;
 
-            _doorPanelTrans = transform.Find("DOOR");
+            _doorPanelTrans = transform.Find("Door");
 
             float y = _doorPanelTrans.localPosition.y;
 

@@ -15,7 +15,7 @@ namespace roomescape
 
         void Start()
         {
-            _itemTemplate = transform.Find("UI_Inventory/Viewport/Content/Item(0)").gameObject;
+            _itemTemplate = transform.Find("Viewport/Content/Item(0)").gameObject;
 
             _itemTemplate.SetActive(false);
 
@@ -47,7 +47,7 @@ namespace roomescape
 
         void Update()
         {
-
+            
         }
     }
 }

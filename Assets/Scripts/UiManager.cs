@@ -8,11 +8,11 @@ namespace roomescape
     {
         public static UiManager I;
 
-        GameObject _backBtnObj;
-        GameObject _leftBtnObj;
-        GameObject _rightBtnObj;
+        public GameObject _backBtnObj;
+        public GameObject _leftBtnObj;
+        public GameObject _rightBtnObj;
 
-        public UI_Inventory _ui_iven;
+        public UI_Inventory _ui_Inven;
 
         void Awake()
         {
@@ -21,11 +21,11 @@ namespace roomescape
 
         void Start()
         {
-            _backBtnObj = transform.Find("Back Button").gameObject;
-            _leftBtnObj = transform.Find("Left Button").gameObject;
-            _rightBtnObj = transform.Find("Right Button").gameObject;
+            _backBtnObj = transform.Find("BackButton").gameObject;
+            _leftBtnObj = transform.Find("LeftButton").gameObject;
+            _rightBtnObj = transform.Find("RightButton").gameObject;
 
-            _ui_iven = transform.Find("UI_Inventory").GetComponent<UI_Inventory>();
+            _ui_Inven = transform.Find("Inventory").GetComponent<UI_Inventory>();
 
             bool mainView = true;
             OnChangeView(mainView);
