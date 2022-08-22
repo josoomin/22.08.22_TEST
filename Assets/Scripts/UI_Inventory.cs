@@ -47,7 +47,7 @@ namespace roomescape
 
         void Update()
         {
-            
+
         }
     }
 }
